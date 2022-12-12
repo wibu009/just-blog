@@ -1,0 +1,61 @@
+﻿@model NewUserViewModel
+@{
+    var roles = (IList<RoleViewModel>)ViewBag.Roles;
+}
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/User/Create" method="post" role="form">
+    <div class="mb-3">
+        <label for="UserName">
+            <b>Username</b>
+        </label>
+        <input type="text" asp-for="UserName" tabindex="2" class="form-control" placeholder="Name" value="@(Model!=null?Model.UserName:null)" oninput="document.getElementById('update-success-message').innerHTML=''" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Username">
+            <b>Email</b>
+        </label>
+        <input type="text" asp-for="Email" tabindex="2" class="form-control" placeholder="Email" value="@(Model!=null?Model.Email:null)" oninput="document.getElementById('update-success-message').innerHTML=''" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Password">
+            <b>Password</b>
+        </label>
+        <input type="password" asp-for="Password" tabindex="2" class="form-control" placeholder="Password" value="@(Model!=null?Model.Email:null)" oninput="document.getElementById('update-success-message').innerHTML=''" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Age">
+            <b>Age</b>
+        </label>
+        <input type="number" asp-for="Age" tabindex="2" class="form-control" placeholder="Age" value="@(Model!=null?Model.Age:null)" oninput="document.getElementById('update-success-message').innerHTML=''" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="AboutMe">
+            <b>About me</b>
+        </label>
+        <input type="text" asp-for="AboutMe" tabindex="2" class="form-control" placeholder="About me" value="@(Model!=null?Model.AboutMe:null)" oninput="document.getElementById('update-success-message').innerHTML=''" />
+        <span asp-validation-for="AboutMe" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 border p-2">
+        <label for="Roles">
+            <b>Roles</b>
+        </label>
+        @foreach (var role in roles)
+        {
+            <span class="d-flex">
+                <input id="Roles" name="Roles" type="checkbox" value="@role.Id" style="margin-right: 10px;" />
+                <span>@role.Name</span>
+            </span>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a href="/Admin/User" class="btn btn-secondary">Cancel</a>
+</form>

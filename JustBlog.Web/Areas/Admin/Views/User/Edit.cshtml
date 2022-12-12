@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var roles = (IList<RoleViewModel>)ViewBag.Roles;
+}
+@model EditUserViewModel
+
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/User/Edit" method="post" role="form">
+    <input type="text" asp-for="Id" tabindex="1" class="form-control" value="@Model.Id" hidden />
+    <h2 class="pb-2">Edit user</h2>
+    <div class="mb-3">
+        <label for="UserNamme">
+            <b>User name</b>
+        </label>
+        <input type="text" asp-for="UserName" tabindex="1" class="form-control" placeholder="User name" value="@(Model!=null?Model.UserName:null)" oninput="getSlug(this.value)" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Username">
+            <b>Username</b>
+        </label>
+        <input type="text" asp-for="Email" tabindex="2" class="form-control" placeholder="Username" value="@(Model!=null?Model.Email:null)">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Age">
+            <b>Age</b>
+        </label>
+        <input type="number" asp-for="Age" tabindex="2" class="form-control" placeholder="Age" value="@(Model!=null?Model.Age:null)">
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="AboutMe">
+            <b>About me</b>
+        </label>
+        <input type="text" asp-for="AboutMe" tabindex="2" class="form-control" placeholder="About me" value="@(Model!=null?Model.AboutMe:null)">
+        <span asp-validation-for="AboutMe" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 border p-2">
+        <label for="RoleIds">
+            <b>Roles</b>
+        </label>
+        @foreach (var role in roles)
+        {
+            <span class="d-flex">
+                <input id="RoleIds" name="RoleIds" type="checkbox" value="@role.Id" style="margin-right: 10px;" checked="@(Model.RoleIds.Contains(role.Id))" />
+                <span>@role.Name</span>
+            </span>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="/Admin/User" class="btn btn-secondary">Cancel</a>
+    @if (ViewBag.Message != null)
+    {
+        <h2 class="text-success pt-3" id="update-success-message">@ViewBag.Message</h2>
+    }
+</form>

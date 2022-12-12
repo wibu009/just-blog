@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model RoleViewModel
+
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/Role/Edit" method="post" role="form">
+    <input type="text" asp-for="Id" tabindex="1" class="form-control" value="@Model.Id" hidden />
+    <h2 class="pb-2">Update roleToCreate</h2>
+    <div class="mb-3">
+        <label for="Name">
+            <b>Name</b>
+        </label>
+        <input type="text" asp-for="Name" tabindex="2" class="form-control" placeholder="Name" value="@(Model!=null?Model.Name:null)" oninput="document.getElementById('update-success-message').innerHTML=''" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="NormalizedName">
+            <b>Normalized name</b>
+        </label>
+        <input type="text" asp-for="NormalizedName" tabindex="3" class="form-control" placeholder="Normalized name" value="@(Model!=null?Model.NormalizedName:null)" oninput="document.getElementById('update-success-message').innerHTML=''">
+        <span asp-validation-for="NormalizedName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="ConcurrencyStamp">
+            <b>Concurrency stamp</b>
+        </label>
+        <textarea asp-for="ConcurrencyStamp" tabindex="4" class="form-control" placeholder="Concurrency stamp" value="@(Model!=null?Model.ConcurrencyStamp:null)" rows="10" oninput="document.getElementById('update-success-message').innerHTML=''"></textarea>
+        <span asp-validation-for="ConcurrencyStamp" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="/Admin/Role" class="btn btn-secondary">Cancel</a>
+    @if (ViewBag.Message != null)
+    {
+        <h2 class="text-success pt-3" id="update-success-message">@ViewBag.Message</h2>
+    }
+</form>

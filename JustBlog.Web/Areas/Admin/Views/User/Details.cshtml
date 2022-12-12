@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model UserDetailsViewModel
+
+<div class="container p-4">
+    <h3>User details</h3>
+    <hr/>
+    <div class="row">
+        <p><b>Id:</b> @Model.Id</p>
+    </div>
+    <div class="row">
+        <p><b>Name:</b> @Model.UserName</p>
+    </div>
+    <div class="row">
+        <p><b>Normalized user name:</b> @Model.NormalizedUserName</p>
+    </div>
+    <div class="row">
+        <p><b>Username:</b> @Model.Email</p>
+    </div>
+    <div class="row">
+        <p><b>Normalized email:</b> @Model.NormalizedEmail</p>
+    </div>
+    <div class="row">
+        <p><b>Password hash:</b> @Model.PasswordHash</p>
+    </div>
+    <div class="row">
+        <p><b>Username confirm:</b> @(Model.EmailConfirm ? "Confirmed" : "Unconfirmed")</p>
+    </div>
+    <div class="row">
+        <p><b>Age:</b> @Model.Age</p>
+    </div>
+    <div class="row">
+        <p><b>Age:</b> @Model.AboutMe</p>
+    </div>
+    <div class="row">
+        <p>
+            <b>Roles:</b>
+            @foreach (var role in Model.Roles)
+            {
+                <span>@role.Name</span>
+            }
+        </p>
+    </div>
+    <div class="row">
+        <a type="button" class="btn btn-warning" href="/Admin/User/Edit/@Model.Id" style="width: 75px;">Edit</a>
+        <a type="button" class="btn btn-secondary ms-1" href="/Admin/User" style="width: 75px;">Back</a>
+    </div>
+</div>

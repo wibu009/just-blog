@@ -1,0 +1,76 @@
+﻿@inject IPostService PostService;
+@inject ITagService TagService;
+
+@{
+    ViewData[index: "Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using JustBlog.Services.Post
+@using JustBlog.Services.Tag
+@model IList<PostViewModel>
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('../assets/img/post-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Just Blog</h1>
+                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="col-lg-12 mx-auto d-flex">
+        <div class="col-lg-9 mx-auto" style="padding-right: 20px;">
+            <h2 class="display-4 fw-bold">Posts</h2>
+            <hr />
+            @if (Model.Count > 0)
+            {
+                @foreach (var post in Model)
+                {
+                    <div class="post-preview">
+                        <h2 class="post-title">@Html.PostLink(title: post.Title, year: post.PostedOn.Year, month: post.PostedOn.Month, slug: post.UrlSlug)</h2>
+                        <h3 class="post-subtitle fw-normal">@Html.Raw(post.ShortDescription)</h3>
+                        <div>
+                            @Html.CategoryLink(name: post.Category.Name, slug: post.Category.UrlSlug)
+                        </div>
+                        <div>
+                            @await Html.PartialAsync("Component/_PopularTagsPartial", model: post.Tags)
+                        </div>
+                        <p class="post-meta">
+                            Posted @post.PostedOn.FriendlyFormat() with rate @post.Rate by @post.ViewCount view(s)
+                        </p>
+                        <hr>
+                    </div>
+                }
+            }
+            else
+            {
+                <h1>There's no posts!</h1>
+            }
+        </div>
+        <div class="col-lg-3 mx-auto">
+            <div id="about-card-partial-views" class="mb-5">
+                @await Html.PartialAsync("Component/_AboutCardPartial")
+            </div>
+            <div id="latest-posts-partial-views" class="mb-5">
+                <h3>Latest posts</h3>
+                @await Html.PartialAsync("Component/_ListPostsPartial", PostService.GetLatestPosts(5))
+            </div>
+            <div id="most-viewed-posts-partial-views" class="mb-5">
+                <h3>Most viewed posts</h3>
+                @await Html.PartialAsync("Component/_ListPostsPartial", PostService.GetMostViewedPosts(5))
+            </div>
+            <div id="popular-tags-partial-views" class="mb-5">
+                <h3>Popular tags</h3>
+                @await Html.PartialAsync("Component/_PopularTagsPartial", TagService.GetTopTags(5))
+            </div>
+        </div>
+    </div>
+</div>
+

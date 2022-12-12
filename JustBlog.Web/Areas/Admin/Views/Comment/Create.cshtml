@@ -1,0 +1,51 @@
+﻿@{
+    var posts = (IList<PostViewModel>)ViewBag.Posts;
+}
+@model CommentToCreateViewModel
+
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/Comment/Create" method="post" role="form">
+    <h2 class="pb-2">Create new comment</h2>
+    <div class="mb-3">
+        <label for="PostId">
+            <b>Post</b>
+        </label>
+        <select asp-for="PostId" class="form-control">
+            <option value="@posts[0].Id" selected>@posts[0].Title</option>
+
+            @for (var i = 1; i < posts.Count; i++)
+            {
+                <option value="@posts[i].Id">@posts[i].Title</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="Title">
+            <b>Comment header</b>
+        </label>
+        <input type="text" asp-for="CommentHeader" tabindex="1" class="form-control" placeholder="Comment header" value="@(Model!=null?Model.CommentHeader:null)" oninput="getSlug(this.value)" />
+        <span asp-validation-for="CommentHeader" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Name">
+            <b>Name</b>
+        </label>
+        <input type="text" asp-for="Name" tabindex="2" class="form-control" placeholder="Name" value="@(Model!=null?Model.Name:null)">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Email">
+            <b>Email</b>
+        </label>
+        <input type="text" asp-for="Email" tabindex="2" class="form-control" placeholder="Email" value="@(Model!=null?Model.Email:null)">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="CommentText">
+            <b>Comment text</b>
+        </label>
+        <textarea asp-for="CommentText" tabindex="3" class="form-control" placeholder="Comment text" value="@(Model!=null?Model.CommentText:null)" rows="10"></textarea>
+        <span asp-validation-for="CommentText" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a href="/Admin/Comment" class="btn btn-secondary">Cancel</a>
+</form>

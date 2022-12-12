@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IList<CategoryViewModel>
+
+@foreach (var category in Model)
+{
+    <li style="padding: 0 15px;">
+        @Html.CategoryLink(category.Name, category.UrlSlug)
+    </li>
+}

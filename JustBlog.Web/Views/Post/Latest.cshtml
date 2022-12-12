@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Latest posts";
+}
+@model IList<PostViewModel>
+
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('../assets/img/home-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Clean Blog</h1>
+                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <h1>Latest posts!</h1>
+            <hr/>
+            @foreach (var post in Model)
+            {
+                <div>
+                    <h1 class="text-primary">
+                        @Html.PostLink(post.Title, post.PostedOn.Year, post.PostedOn.Month, post.UrlSlug)
+                    </h1>
+                    <a href="/post/details/@post.Id"></a>
+                    <p>Posted @post.PostedOn with rate @post.Rate by @post.ViewCount view(s)</p>
+                    <p>@Html.Raw(post.ShortDescription)</p>
+                    <hr>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var posts = (IList<PostViewModel>)ViewBag.Posts;
+}
+@model CommentToUpdateViewModel
+
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/Comment/Edit" method="post" role="form">
+    <h2 class="pb-2">Update comment</h2>
+    <input type="number" asp-for="Id" tabindex="1" class="form-control" value="@Model.Id" hidden />
+    <div class="mb-3">
+        <label for="PostId">
+            <b>Post</b>
+        </label>
+        <select asp-for="PostId" class="form-control" onchange="document.getElementById('update-success-message').innerHTML=''">
+
+            @foreach (var post in posts)
+            {
+                <option value="@post.Id" selected="@(Model.PostId==post.Id)">@post.Title</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="CommentTime">
+            <b>Comment time</b>
+        </label>
+        <input type="datetime-local" class="form-control" asp-for="CommentTime" value="@Model.CommentTime.DateTimePickerValue()" />
+        <span asp-validation-for="CommentTime" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Title">
+            <b>Comment header</b>
+        </label>
+        <input type="text" asp-for="CommentHeader" tabindex="1" class="form-control" placeholder="Comment header" value="@(Model!=null?Model.CommentHeader:null)" oninput="getSlug(this.value)" />
+        <span asp-validation-for="CommentHeader" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Name">
+            <b>Name</b>
+        </label>
+        <input type="text" asp-for="Name" tabindex="2" class="form-control" placeholder="Name" value="@(Model!=null?Model.Name:null)" oninput="document.getElementById('update-success-message').innerHTML=''">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Username">
+            <b>Username</b>
+        </label>
+        <input type="text" asp-for="Email" tabindex="2" class="form-control" placeholder="Username" value="@(Model!=null?Model.Email:null)" oninput="document.getElementById('update-success-message').innerHTML=''">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="CommentText">
+            <b>Comment text</b>
+        </label>
+        <textarea asp-for="CommentText" tabindex="3" class="form-control" placeholder="Comment text" value="@(Model!=null?Model.CommentText:null)" rows="10" oninput="document.getElementById('update-success-message').innerHTML=''"></textarea>
+        <span asp-validation-for="CommentText" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="/Admin/Comment" class="btn btn-secondary">Cancel</a>
+    @if (ViewBag.Message != null)
+    {
+        <h2 class="text-success pt-3" id="update-success-message">@ViewBag.Message</h2>
+    }
+</form>

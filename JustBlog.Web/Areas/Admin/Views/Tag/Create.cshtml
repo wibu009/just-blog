@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model TagToCreateViewModel
+
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/Tag/Create" method="post" role="form">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <h2 class="pb-2">Create new tag</h2>
+    <div class="mb-3">
+        <label for="Name">
+            <b>Name</b>
+        </label>
+        <input type="text" asp-for="Name" tabindex="5" class="form-control" placeholder="Name" value="@(Model!=null?Model.Name:null)" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="UrlSlug">
+            <b>Url slug</b>
+        </label>
+        <input type="text" asp-for="UrlSlug" tabindex="6" class="form-control" placeholder="Slug" value="@(Model!=null?Model.UrlSlug:null)">
+        <span asp-validation-for="UrlSlug" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Description">
+            <b>Description</b>
+        </label>
+        <textarea asp-for="Description" tabindex="7" class="form-control" placeholder="Description" value="@(Model!=null?Model.Description:null)" rows="10"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a href="/Admin/Tag" class="btn btn-secondary">Cancel</a>
+</form>
+

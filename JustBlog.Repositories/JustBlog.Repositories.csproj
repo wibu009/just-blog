@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Category\" />
+    <Folder Include="Comment\" />
+    <Folder Include="Tag\" />
+    <Folder Include="Post\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JustBlog.Core\JustBlog.Core.csproj" />
+    <ProjectReference Include="..\JustBlog.ViewModels\JustBlog.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

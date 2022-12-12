@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model PostDetailsViewModel
+
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('/assets/img/post-sample-image.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="post-heading">
+                    <h1>@Html.Raw(Model.Title)</h1>
+                    <h2 class="subheading">@Html.Raw(Model.ShortDescription)</h2>
+                    <span class="meta">
+                        Posted by <a href="#!">Start Bootstrap</a> @Model.PostedOn.FriendlyFormat()
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container px-4 px-lg-5">
+    <h1>Contents</h1>
+
+    <input type="number" value="@Model.Id" hidden id="postId" />
+    <p>@Html.Raw(Model.PostContent)</p>
+
+    <hr class="mb-3" />
+    <h3 class="mb-3">Comments</h3>
+    <div id="comments-box">
+    </div>
+
+    <hr class="mb-3" />
+    <h3 class="mb-3">Add new comment</h3>
+
+    <div id="add-comment-box">
+        <div class="row g-3">
+            <div class="col-12">
+                <label for="comment-header" class="form-label">Header</label>
+                <input type="text" class="form-control" id="comment-header" placeholder="header...">
+            </div>
+            <div class="col-md-6">
+                <label for="comment-email" class="form-label">Username</label>
+                <input type="email" class="form-control" id="comment-email" placeholder="your email...">
+            </div>
+            <div class="col-md-6">
+                <label for="comment-name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="comment-name" placeholder="your name...">
+            </div>
+            <div class="col-12">
+                <label for="comment-text" class="form-label">Example comment</label>
+                <textarea class="form-control" id="comment-text" rows="3" placeholder="comment in here..."></textarea>
+            </div>
+            <div class="col-12 mb-3">
+                <button type="submit" id="submit-comment-btn" class="btn btn-primary">Submit</button>
+                <span class="text-danger" hidden id="submit-comment-result">Name, Username and comment text must not be empty</span>
+            </div>
+        </div>
+    </div>
+</div>

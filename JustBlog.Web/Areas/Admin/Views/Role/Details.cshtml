@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model RoleViewModel
+
+<div class="container p-4">
+    <h3>Role details</h3>
+    <hr/>
+    <div class="row">
+        <p><b>Id:</b> @Model.Id</p>
+    </div>
+    <div class="row">
+        <p><b>Name:</b> @Model.Name</p>
+    </div>
+    <div class="row">
+        <p><b>Normalized name:</b> @Model.NormalizedName</p>
+    </div>
+    <div class="row">
+        <p><b>Concurrency stamp:</b> @Html.Raw(Model.ConcurrencyStamp)</p>
+    </div>
+    <div class="row">
+        <a type="button" class="btn btn-warning" href="/Admin/Role/Edit/@Model.Id" style="width: 75px;">Edit</a>
+        <a type="button" class="btn btn-secondary ms-1" href="/Admin/Role" style="width: 75px;">Back</a>
+    </div>
+</div>

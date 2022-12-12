@@ -1,0 +1,74 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var categories = (IList<CategoryViewModel>)ViewBag.Categories;
+    var tags = (IList<TagViewModel>)ViewBag.Tags;
+}
+
+@model PostToCreateViewModel
+
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/Post/Create" method="post" role="form">
+    <h2 class="pb-2">Create new post</h2>
+    <div class="mb-3">
+        <label for="Title">
+            <b>Title</b>
+        </label>
+        <input type="text" asp-for="Title" tabindex="1" class="form-control" placeholder="Title" value="@(Model!=null?Model.Title:null)" oninput="getSlug(this.value)" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="UrlSlug">
+            <b>Url slug</b>
+        </label>
+        <input type="text" asp-for="UrlSlug" tabindex="2" class="form-control" placeholder="Slug" value="@(Model!=null?Model.UrlSlug:null)">
+        <span asp-validation-for="UrlSlug" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="ShortDescription">
+            <b>Short description</b>
+        </label>
+        <textarea asp-for="ShortDescription" tabindex="3" class="form-control" placeholder="Short description" value="@(Model!=null?Model.ShortDescription:null)" rows="10"></textarea>
+        <span asp-validation-for="ShortDescription" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="PostContent">
+            <b>Post content</b>
+        </label>
+        <textarea asp-for="PostContent" tabindex="4" class="form-control" placeholder="Post content" value="@(Model!=null?Model.PostContent:null)" rows="10"></textarea>
+        <span asp-validation-for="PostContent" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Published">
+            <b>Published?</b>
+        </label>
+        <input type="checkbox" asp-for="Published" class="form-check-input me-1 ms-1" value="@(Model!=null?true:false)" />
+    </div>
+    <div class="mb-3">
+        <label for="CategoryId">
+            <b>Category</b>
+        </label>
+
+        <select asp-for="CategoryId" class="form-control">
+            <option asp-for="CategoryId" value="@categories[0].Id" style="margin-right: 10px;" selected>@categories[0].Name</option>
+            @for (var i = 1; i < categories.Count; i++)
+            {
+                <option asp-for="CategoryId" value="@categories[i].Id" style="margin-right: 10px;">@categories[i].Name</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3 border p-2">
+        <label for="TagIds">
+            <b>Tags</b>
+        </label>
+        @foreach (var tag in tags)
+        {
+            <span class="d-flex">
+                <input id="TagIds" name="TagIds" type="checkbox" value="@tag.Id" style="margin-right: 10px;" />
+                <span>@tag.Name</span>
+            </span>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a href="/Admin/Post" class="btn btn-secondary">Cancel</a>
+</form>

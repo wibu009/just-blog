@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model RoleToCreateViewModel
+<form class="row-cols-12" style="padding: 24px;" action="/Admin/Role/Create" method="post" role="form">
+    <div class="mb-3">
+        <label for="Name">
+            <b>Name</b>
+        </label>
+        <input type="text" asp-for="Name" tabindex="2" class="form-control" placeholder="Name" value="@(Model!=null?Model.Name:null)" oninput="document.getElementById('update-success-message').innerHTML=''" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a href="/Admin/Role" class="btn btn-secondary">Cancel</a>
+    @if (ViewBag.Message != null)
+    {
+        <p class="text-success" id="update-success-message">@ViewBag.Message</p>
+    }
+</form>
