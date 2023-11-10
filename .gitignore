@@ -10,6 +10,10 @@
 *.userosscache
 *.sln.docstates
 
+#Ignore Visual Studio Code and jetbrains Rider settings
+.vscode/
+.idea/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

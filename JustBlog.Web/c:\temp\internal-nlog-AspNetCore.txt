@@ -1,0 +1,174 @@
+2023-11-09 18:29:29.2215 Info Message Template Auto Format enabled
+2023-11-09 18:29:29.2576 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-09 18:29:29.3480 Info Adding target FileTarget(Name=allfile)
+2023-11-09 18:29:29.3502 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-09 18:29:29.3502 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-09 18:29:29.3942 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:29:29.6444 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:32:04.6519 Info Shutdown() called. Logger closing...
+2023-11-09 18:32:04.6519 Info Closing old configuration.
+2023-11-09 18:32:04.6609 Info Logger has been closed down.
+2023-11-09 18:32:07.2734 Info Message Template Auto Format enabled
+2023-11-09 18:32:07.2875 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-09 18:32:07.3365 Info Adding target FileTarget(Name=allfile)
+2023-11-09 18:32:07.3381 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-09 18:32:07.3381 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-09 18:32:07.3616 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:32:07.5410 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:39:49.8155 Info Shutdown() called. Logger closing...
+2023-11-09 18:39:49.8155 Info Closing old configuration.
+2023-11-09 18:39:49.8249 Info Logger has been closed down.
+2023-11-09 18:55:51.9067 Info Message Template Auto Format enabled
+2023-11-09 18:55:51.9342 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-09 18:55:51.9902 Info Adding target FileTarget(Name=allfile)
+2023-11-09 18:56:15.4118 Info Message Template Auto Format enabled
+2023-11-09 18:56:15.4270 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-09 18:56:15.4866 Info Adding target FileTarget(Name=allfile)
+2023-11-09 18:56:15.4866 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-09 18:56:15.4894 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-09 18:56:15.5276 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:56:15.8089 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:56:34.8995 Info Message Template Auto Format enabled
+2023-11-09 18:56:34.9152 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-09 18:56:34.9704 Info Adding target FileTarget(Name=allfile)
+2023-11-09 18:56:34.9704 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-09 18:56:34.9704 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-09 18:56:34.9984 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:56:35.2312 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:56:43.3368 Info Shutdown() called. Logger closing...
+2023-11-09 18:56:43.3368 Info Closing old configuration.
+2023-11-09 18:56:43.3479 Info Logger has been closed down.
+2023-11-09 18:56:55.0652 Info Message Template Auto Format enabled
+2023-11-09 18:56:55.0872 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-09 18:56:55.1411 Info Adding target FileTarget(Name=allfile)
+2023-11-09 18:56:55.1425 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-09 18:56:55.1425 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-09 18:56:55.1720 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:56:55.8417 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:58:47.5565 Info Message Template Auto Format enabled
+2023-11-09 18:58:47.5697 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-09 18:58:47.6103 Info Adding target FileTarget(Name=allfile)
+2023-11-09 18:58:47.6103 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-09 18:58:47.6103 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-09 18:58:47.6328 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:58:47.8032 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-09 18:58:56.5148 Info Shutdown() called. Logger closing...
+2023-11-09 18:58:56.5148 Info Closing old configuration.
+2023-11-09 18:58:56.5228 Info Logger has been closed down.
+2023-11-10 09:37:04.4249 Info Message Template Auto Format enabled
+2023-11-10 09:37:04.4448 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 09:37:04.5037 Info Adding target FileTarget(Name=allfile)
+2023-11-10 09:37:04.5037 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 09:37:04.5037 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 09:37:04.5423 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 09:37:04.8308 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 09:38:10.1361 Info Shutdown() called. Logger closing...
+2023-11-10 09:38:10.1361 Info Closing old configuration.
+2023-11-10 09:38:10.1466 Info Logger has been closed down.
+2023-11-10 09:58:55.2803 Info Message Template Auto Format enabled
+2023-11-10 09:58:55.2952 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 09:58:55.3487 Info Adding target FileTarget(Name=allfile)
+2023-11-10 09:58:55.3487 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 09:58:55.3487 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 09:58:55.3773 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 09:58:55.5885 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 09:59:12.5218 Info Message Template Auto Format enabled
+2023-11-10 09:59:12.5372 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 09:59:12.5948 Info Adding target FileTarget(Name=allfile)
+2023-11-10 09:59:12.5961 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 09:59:12.5961 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 09:59:12.6210 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 09:59:12.8465 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 09:59:26.4174 Info Message Template Auto Format enabled
+2023-11-10 09:59:26.4394 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 09:59:26.4916 Info Adding target FileTarget(Name=allfile)
+2023-11-10 09:59:26.4916 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 09:59:26.4916 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 09:59:26.5205 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 09:59:27.1785 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:03:09.4247 Info Message Template Auto Format enabled
+2023-11-10 10:03:09.4508 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:03:09.5134 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:03:09.5134 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:03:09.5134 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:03:09.5476 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:03:10.3138 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:15:20.8681 Info Message Template Auto Format enabled
+2023-11-10 10:15:20.8965 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:15:20.9541 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:15:20.9541 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:15:20.9541 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:15:20.9909 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:15:21.7999 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:21:26.2698 Info Message Template Auto Format enabled
+2023-11-10 10:21:26.2947 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:21:26.3605 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:21:26.3627 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:21:26.3627 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:21:26.3955 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:21:27.0442 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:22:03.8565 Info Message Template Auto Format enabled
+2023-11-10 10:22:03.8781 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:22:03.9301 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:22:03.9301 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:22:03.9301 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:22:03.9587 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:22:04.6094 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:24:33.7631 Info Shutdown() called. Logger closing...
+2023-11-10 10:24:33.7631 Info Closing old configuration.
+2023-11-10 10:24:33.7703 Info Logger has been closed down.
+2023-11-10 10:25:58.1502 Info Message Template Auto Format enabled
+2023-11-10 10:25:58.1718 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:25:58.2247 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:25:58.2262 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:25:58.2262 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:25:58.2541 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:25:58.8954 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:26:48.6538 Info Message Template Auto Format enabled
+2023-11-10 10:26:48.6764 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:26:48.7331 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:26:48.7346 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:26:48.7346 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:26:48.7619 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:26:49.3988 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:29:00.8929 Info Shutdown() called. Logger closing...
+2023-11-10 10:29:00.8929 Info Closing old configuration.
+2023-11-10 10:29:00.9005 Info Logger has been closed down.
+2023-11-10 10:29:59.6864 Info Message Template Auto Format enabled
+2023-11-10 10:29:59.7031 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:29:59.7601 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:29:59.7601 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:29:59.7621 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:29:59.7884 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:29:59.9925 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:30:20.0153 Info Message Template Auto Format enabled
+2023-11-10 10:30:20.0388 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 10:30:20.0928 Info Adding target FileTarget(Name=allfile)
+2023-11-10 10:30:20.0942 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 10:30:20.0942 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 10:30:20.1220 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 10:30:20.7514 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 11:21:24.7175 Info Message Template Auto Format enabled
+2023-11-10 11:21:24.7391 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 11:21:24.7914 Info Adding target FileTarget(Name=allfile)
+2023-11-10 11:21:24.7914 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 11:21:24.7914 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 11:21:24.8213 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 11:21:25.4416 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 11:21:46.7100 Info Message Template Auto Format enabled
+2023-11-10 11:21:46.7318 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 11:21:46.7843 Info Adding target FileTarget(Name=allfile)
+2023-11-10 11:21:46.7843 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 11:21:46.7862 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 11:21:46.8137 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 11:21:47.4972 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 11:51:19.7717 Info Message Template Auto Format enabled
+2023-11-10 11:51:19.8269 Info Loading assembly: NLog.Web.AspNetCore
+2023-11-10 11:51:20.0159 Info Adding target FileTarget(Name=allfile)
+2023-11-10 11:51:20.0206 Info Adding target FileTarget(Name=ownFile-web)
+2023-11-10 11:51:20.0206 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2023-11-10 11:51:20.1156 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 11:51:20.7885 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=/home/kin/Projects/JustBlog/JustBlog.Web/bin/Debug/net6.0/NLog.config
+2023-11-10 11:51:59.6677 Info Shutdown() called. Logger closing...
+2023-11-10 11:51:59.6677 Info Closing old configuration.
+2023-11-10 11:51:59.7112 Info Logger has been closed down.
